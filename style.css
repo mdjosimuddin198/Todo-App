@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  background-color: black;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+
+  flex-direction: column;
+}
+#todo-text {
+  font-size: 5rem;
+  color: #00ffc4;
+  text-align: center;
+}
+.form-section input[type="text"] {
+  padding: 15px;
+  width: 60%;
+  font-size: 0.9rem;
+  border: 3px solid #f3bb53;
+  border-radius: 10px;
+}
+.form-section input:focus {
+  outline: none;
+}
+.btn {
+  padding: 10px 43px;
+  border: none;
+  background: #00ffc4;
+  outline: none;
+  border-radius: 5px;
+  border-right: none;
+  font-size: 1.4rem;
+  margin-left: -137px;
+  font-weight: bold;
+}
+.deleteBtn {
+  background: #f3bb53;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  font-size: 1.3rem;
+}
+.deleteBtn:hover {
+  color: red;
+  border: 2px solid #00ffc4;
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+  transform: scale(1.1);
+}
+.btn:hover {
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+  transform: scale(1.1);
+}
+.form-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+ul li {
+  list-style-type: none;
+  font-size: 1.5rem;
+  color: white;
+  border-bottom: 1px solid #00ffc4;
+  margin: 9px;
+  display: flex;
+
+  width: 60%;
+  justify-content: space-between;
+  padding: 5px 20px;
+}
